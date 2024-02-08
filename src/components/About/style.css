@@ -1,0 +1,34 @@
+:root {
+    --onyx: #474448ff;
+    --raisin-blue: rgb(158, 36, 166);
+    --bone: #e0ddcfff;
+    --cool-gray: #9a94bcff;
+    --rose-quartz: #9888a5ff;
+}
+
+img {
+    height: 200px;
+    width: 145.75px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.about-div {
+    margin-top: 150px;
+    /* padding-left: 100px; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: rgb(36, 36, 166);
+    max-width: 50vw;
+}
+
+h2 {
+    font-size: 200%;
+    align-self: flex-start;
+}
+
+p {
+    font-size: 100%;
+}
