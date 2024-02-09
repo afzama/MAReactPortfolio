@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import boardgamecafe from '../../assets/Boardgamecafe.png'
+import geekymoviewizard from '../../assets/GeekyMovieWizard.jpeg'
 
 function Project(props) {
     console.log(props);
@@ -13,7 +13,6 @@ function Project(props) {
                     <h3 className='card-heading'>{props.project.heading}</h3>
                 </a>
                 <a href={props.project.githubLink} className='project-social-link'>
-                    {/* <FontAwesomeIcon icon={faGithub} style={{ padding: '10px' }} className='project-social-icon' /> */}
                 </a>
                 <p className='project-techs'>{props.project.techs}</p>
             </div>

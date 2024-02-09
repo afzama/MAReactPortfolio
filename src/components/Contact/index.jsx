@@ -2,38 +2,51 @@ import React, {useState} from 'react'
 import './style.css'
 
 export default function Contact() {
-    const handleSubmit = async (e) => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const [errors, setErrors] = useState({});
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData, [name]: value
+        }));
+    };
+
+    const emailVal = email => {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    };
+
+    const handleSubmit = (e) => {
         e.preventDefault();
-      
-        // Validation logic...
-      
+
+        // Validation logic
+        const validationError = {};
+        if (!formData.name.trim()) {
+            validationError.name = 'Name is required!';
+        }
+        if (!formData.email.trim()) {
+            validationError.email = 'Email is required!';
+        } else if (!emailVal(formData.email)) {
+            validationError.email = 'Email is invalid!';
+        }
+        if (!formData.message.trim()) {
+            validationError.message = 'Message is required!';
+        }
+
+        // Check if errors exist
         if (Object.keys(validationError).length > 0) {
-          setErrors(validationError);
-          return;
+            setErrors(validationError);
+            return;
         }
-      
+
         setErrors({});
-      
-        try {
-          const response = await fetch('/.netlify/functions/submitForm', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-          });
-      
-          if (response.ok) {
-            // Handle success, e.g., show a success message to the user
-            console.log('Form submitted successfully');
-          } else {
-            // Handle error, e.g., show an error message to the user
-            console.error('Error submitting form');
-          }
-        } catch (error) {
-          console.error('Error submitting form:', error);
-        }
-      };
+    };
       
 
   return (

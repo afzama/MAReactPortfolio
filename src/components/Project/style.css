@@ -1,9 +1,10 @@
 :root {
     --onyx: #474448ff;
-    --raisin-black: #2d232eff;
-    --bone: #e0ddcfff;
-    --cool-gray: #9a94bcff;
-    --rose-quartz: #9888a5ff;
+    --raisin-blue: rgb(158, 36, 166);
+    --deep-purple: rgb(76, 55, 191);
+    --cool-gold: rgb(208, 194, 133);
+    --rose-quartz: rgb(153, 107, 148);
+    --royal-blue: rgb(36, 36, 166);
 }
 
 .project-card {
@@ -13,7 +14,7 @@
     overflow: hidden;
     border-radius: 10px;
     margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px (var(--cool-gold));
     margin: 50px;
 }
 
@@ -33,19 +34,19 @@
     position: relative;
     z-index: 1;
     padding: 20px;
-    color: var(--bone);
+    color: var(--rose-quartz);
     visibility: hidden;
     opacity: 0;
     transition: opacity .7s ease;
 }
 
 .project-social-link {
-    color: var(--bone);
+    color: var(--rose-quartz);
     text-decoration: none;
 }
 
 .project-social-link:hover {
-    color: var(--cool-gray);
+    color: var(--raisin-blue);
 }
 
 .project-social-icon {

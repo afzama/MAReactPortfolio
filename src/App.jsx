@@ -6,20 +6,22 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Project from './components/Project'
 import Resume from './components/Resume'
+import BoardGameCafe from './assets/Boardgamecafe.png';
+import GeekyMovieWizard from './assets/GeekyMovieWizard.jpeg';
 
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
   const projects = [
     {
-        // imgSrc: BoardGameCafe,
+        imgSrc: BoardGameCafe,
         deployedLink: 'https://boardgame-cafe-1166881584c8.herokuapp.com/profile',
         heading: 'Board Game Cafe',
         githubLink: 'https://github.com/r-basu/boardgame-cafe',
         techs: 'Express, MySQL, Sequelize, Handlebars'
     },
     {
-      // imgSrc: GeekyMovieWizard,
+      imgSrc: GeekyMovieWizard,
       deployedLink: 'https://ryanpersaud03.github.io/geekymoviewizard/',
       heading: 'Geeky Movie Wizard',
       githubLink: 'https://github.com/RyanPersaud03/geekymoviewizard',
