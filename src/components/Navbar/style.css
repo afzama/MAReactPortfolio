@@ -1,9 +1,10 @@
 :root {
     --onyx: #474448ff;
     --raisin-blue: rgb(158, 36, 166);
-    --bone: rgb(208, 194, 133);
-    --cool-gray: #9a94bcff;
-    --rose-quartz: #9888a5ff;
+    --deep-purple: rgb(76, 55, 191);
+    --cool-gold: rgb(208, 194, 133);
+    --rose-quartz: rgb(153, 107, 148);
+    --royal-blue: rgb(36, 36, 166);
 }
 
 nav {
@@ -11,13 +12,15 @@ nav {
     justify-content: space-around;
     width: 90%;
     padding-right: 60px;
+
 }
 
-.navbar-link {
-    color: var(--bone);
+navbar-link {
+    color: var(--royal-blue);
     text-decoration: none;
+    margin: 0 10px;
 }
 
-.navbar-link:hover {
-    color: var(--cool-gray);
+navbar-link:hover {
+    color: var(--cool-gold);
 }

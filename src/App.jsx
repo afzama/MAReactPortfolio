@@ -7,7 +7,6 @@ import Contact from './components/Contact'
 import Project from './components/Project'
 import Resume from './components/Resume'
 
-import NavBar from './components/Navbar';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');

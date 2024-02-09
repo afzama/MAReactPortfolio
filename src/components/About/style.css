@@ -1,19 +1,31 @@
 :root {
     --onyx: #474448ff;
     --raisin-blue: rgb(158, 36, 166);
-    --bone: #e0ddcfff;
-    --cool-gray: #9a94bcff;
-    --rose-quartz: #9888a5ff;
+    --deep-purple: rgb(76, 55, 191);
+    --cool-gold: rgb(208, 194, 133);
+    --rose-quartz: rgb(153, 107, 148);
+    --royal-blue: rgb(36, 36, 166);
 }
 
-img {
-    height: 200px;
-    width: 145.75px;
+.center-image {
+    display: flex;
     border-radius: 50%;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.about-div {
+.center-image img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-height: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+h2 {
+    font-size: 200%;
+    text-align: center;
+}
+
+.about-section {
     margin-top: 150px;
     /* padding-left: 100px; */
     position: absolute;
@@ -24,11 +36,12 @@ img {
     max-width: 50vw;
 }
 
-h2 {
-    font-size: 200%;
-    align-self: flex-start;
-}
-
 p {
     font-size: 100%;
 }
+
+.skill-badge img {
+    height: 150px;
+    width: 150px;
+}
+

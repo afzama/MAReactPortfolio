@@ -6,7 +6,6 @@ function Header({setActiveSection}) {
 
     return (
         <header>
-            {/* <img src={profilePic} alt="Profile Picture" /> */}
             <h1>Maria Afzal</h1>
             <NavBar setActiveSection={setActiveSection} />
         </header>
