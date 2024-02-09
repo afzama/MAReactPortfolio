@@ -1,8 +1,8 @@
-# React + Vite
+# MAReactPortfolio
+Full Stack Developer Excited About Crafting Innovative Features &amp; Functionality | HTML, CSS, JavaScript | Cloud Enthusiast (Google &amp; AWS) | API Lover
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# About-Me
+As stated on the react portfolio app, I am looking forward to placing my portfolio stack in front of potential employers and use my love of APIs and bootcamp knowledge to solve real world challanges.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Deployed Application Link
+Visit the website link [here] (https://afzamaportfolio.netlify.app/)
