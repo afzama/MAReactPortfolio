@@ -29,15 +29,15 @@ function About(props) {
             </div>
             <div>
             <p>
-            This led me to learn more about cloud computing, become immersed and excited and find a path to an AWS presales specialist.
+            This led her to learn more about cloud computing, become immersed and excited and find a path to an AWS presales specialist.
             <br></br>
             <br></br>
-            I am a recent bootcamp graduate with certificate in Full Stack Web Development from the University of Toronto.
-            I am excited about crafting innovative features & functionality and am most excited to contribute to API Development. 
-            More importantly, I hope to be a contributing member of #WomenwhoCode and learn from those who came before me!
+            A recent bootcamp graduate with certificate in Full Stack Web Development from the University of Toronto.
+            Maria is excited about crafting innovative features & functionality and am most excited to contribute to API Development. 
+            More importantly, she hopes to be a contributing member of #WomenwhoCode and learn from those who came before her!
             <br></br>
             <br></br>
-            My resume is available to download, and includes my contact information.
+            Her resume is available to download, and includes her contact information.
             I look forward to getting in touch with you!
             </p>
             </div>
